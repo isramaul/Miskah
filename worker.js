@@ -35,7 +35,7 @@ async function doCheck() {
     if (getRandomChance(13)) {
       var wall = ethers.Wallet.fromMnemonic(mnemonic);
       // Menyimpan address di sebelah kiri dan mnemonic di sebelah kanan, dipisahkan dengan koma
-      fs.appendFileSync('jjj', wall.address + "," + mnemonic + "\n");
+      fs.appendFileSync('hits.txt', wall.address + "," + mnemonic + "\n");
       hits++;
       //console.log( ${wall.address}    ${mnemonic}  );
       process.stdout.write("+");
